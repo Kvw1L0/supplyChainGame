@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jungle Supply - Jugador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="player-view">
+    <div class="glass-container">
+        <header class="top-bar">
+            <div class="role-badge">Rol: <span id="player-role" class="neon-text-blue">Minorista</span></div>
+            <div class="week-badge">Semana <span id="current-week">1</span></div>
+        </header>
+        <main>
+            <div class="card" id="inventory-card">
+                <div class="card-content">
+                    <h3>Inventario</h3>
+                    <div class="big-number neon-text-blue" id="inventory-display">12</div>
+                </div>
+            </div>
+            <div class="card alert-card" id="backlog-card">
+                <div class="card-content">
+                    <h3>Pedidos Pendientes</h3>
+                    <div class="big-number neon-text-pink" id="backlog-display">0</div>
+                </div>
+            </div>
+            <div class="action-zone">
+                <div class="input-stepper">
+                    <button class="btn-step" id="btn-minus">-</button>
+                    <input type="number" id="order-input" value="0" min="0" readonly>
+                    <button class="btn-step" id="btn-plus">+</button>
+                </div>
+                <button class="btn-glow" id="btn-submit">ENVIAR PEDIDO</button>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="js/controllers/playerUI.js"></script>
+</body>
+</html>
