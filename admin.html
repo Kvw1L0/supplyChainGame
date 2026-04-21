@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Jungle Supply</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="admin-panel">
+    <div class="glass-container">
+        <h2 class="neon-text-pink">CONTROL DE MISIÓN</h2>
+        <div class="week-badge">Semana: <span id="admin-week">1</span></div>
+        
+        <div class="team-check-list" style="margin: 20px 0;">
+            <div id="status-retailer" class="team-row">Minorista: <span class="badge">Esperando...</span></div>
+            <div id="status-wholesaler" class="team-row">Mayorista: <span class="badge">Esperando...</span></div>
+            <div id="status-distributor" class="team-row">Distribuidor: <span class="badge">Esperando...</span></div>
+            <div id="status-factory" class="team-row">Fábrica: <span class="badge">Esperando...</span></div>
+        </div>
+
+        <div class="control-actions card">
+            <label>Demanda del Cliente (Esta Semana):</label>
+            <input type="number" id="next-demand" value="4" style="font-size: 2rem; width: 100%; text-align: center; background: transparent; color: white; border: 1px solid var(--neon-blue); margin-bottom: 15px;">
+            <button class="btn-glow" id="btn-advance" disabled>PROCESAR SEMANA</button>
+        </div>
+        <button id="btn-init-db" style="margin-top:20px; background:#333; color:white; border:none; padding:10px; cursor:pointer; width:100%;">[DEV] Resetear Base de Datos</button>
+    </div>
+    <script type="module" src="js/controllers/adminUI.js"></script>
+</body>
+</html>
