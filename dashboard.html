@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Global</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-view">
+    <div class="glass-container full-width" style="max-width: 1200px;">
+        <header class="admin-header" style="text-align: center; margin-bottom: 40px;">
+            <h1 class="neon-text-blue">RED DE SUMINISTRO GLOBAL</h1>
+            <div class="week-badge large" style="font-size: 2rem;">Semana <span id="dash-week">1</span></div>
+        </header>
+
+        <div class="nodes-grid" style="display: flex; justify-content: space-between; gap: 20px;">
+            <div class="node-card" id="dash-retailer">
+                <h2>MINORISTA</h2>
+                <div class="status-indicator"></div>
+                <div class="conn-status" style="font-size: 0.8rem; color: gray;">Offline</div>
+            </div>
+            <div class="node-card" id="dash-wholesaler">
+                <h2>MAYORISTA</h2>
+                <div class="status-indicator"></div>
+                <div class="conn-status" style="font-size: 0.8rem; color: gray;">Offline</div>
+            </div>
+            <div class="node-card" id="dash-distributor">
+                <h2>DISTRIBUIDOR</h2>
+                <div class="status-indicator"></div>
+                <div class="conn-status" style="font-size: 0.8rem; color: gray;">Offline</div>
+            </div>
+            <div class="node-card" id="dash-factory">
+                <h2>FÁBRICA</h2>
+                <div class="status-indicator"></div>
+                <div class="conn-status" style="font-size: 0.8rem; color: gray;">Offline</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/controllers/dashUI.js"></script>
+</body>
+</html>
